@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-03-2022 a las 17:24:45
+-- Tiempo de generación: 25-03-2022 a las 14:21:11
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `prueba`
 --
+DROP DATABASE IF EXISTS `prueba`;
+CREATE DATABASE IF NOT EXISTS `prueba` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `prueba`;
 
 -- --------------------------------------------------------
 
@@ -69,7 +72,7 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `correo`, `edad`, `foto`, `oldfoto`) VALUES
 (1, 'Fulanito', 'Detal', 'guayando@guayando.com', 23, 'images/photos/Fulanito_Detal_bob.jpg', 'images/photos/Fulanito_Detal_bob.jpg'),
 (2, 'Sergio', 'Gonzalez', 'sergioalejandrogs@gmail.com', 27, 'images/photos/Sergio_Gonzalez_20131102_142648-COLLAGE.jpg', 'images/photos/Sergio_Gonzalez_20131102_142648-COLLAGE.jpg'),
-(10, 'Stromae', 'Maestro', 'stromae@maestro.com', 35, 'images/photos/Stromae_Maestro_stromae.jpg', 'images/photos/Stromae_Maestro_stromae.jpg');
+(10, 'Stromae', 'Maestro', 'stromae@maestro.com', 35, 'images/photos/Stromae_Maestro_py.jpg', 'images/photos/Stromae_Maestro_py.jpg');
 
 -- --------------------------------------------------------
 
@@ -125,7 +128,7 @@ ALTER TABLE `ventas`
 -- AUTO_INCREMENT de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-  MODIFY `id_articulo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id_articulo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
