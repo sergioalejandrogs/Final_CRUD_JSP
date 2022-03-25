@@ -85,7 +85,7 @@ public class ventaController {
     }
     
     @RequestMapping(value="addVenta.htm", method=RequestMethod.POST)
-    public ModelAndView addVentas(VentaBean v){
+    public ModelAndView addVenta(VentaBean v){
         ModelAndView mav = new ModelAndView();
         String sql = "insert into ventas (id_usuario, id_articulo, fecha_venta) "
                 + "values(?,?,?)";
