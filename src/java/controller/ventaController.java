@@ -76,11 +76,21 @@ public class ventaController {
         ArticleDao articleDao = new ArticleDao();
         //Lists the articles on the DB so we can select the one we need
         List id_articulo = articleDao.consultarArticulos();
-        
+         System.out.print("------");
         mav.addObject("venta", venta);    
         mav.addObject("id_usuario", id_usuario);
         mav.addObject("id_articulo", id_articulo);
         mav.setViewName("views/addVenta");
+        return mav;
+    }
+    
+    @RequestMapping(value="addVenta.htm", method=RequestMethod.POST)
+    public ModelAndView addVentas(VentaBean v){
+        ModelAndView mav = new ModelAndView();
+        String sql = "insert into ventas (id_usuario, id_articulo, fecha_venta) "
+                + "values(?,?,?)";
+        jdbcTemplate.update(sql, v.getId_usuario(), v.getId_articulo(), v.getFecha_venta());
+        mav.setViewName("redirect:/listarVentas.htm");
         return mav;
     }
 }

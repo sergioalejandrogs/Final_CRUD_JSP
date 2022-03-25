@@ -19,13 +19,13 @@ public class VentaBean {
     private int id_venta;
     private int id_usuario;
     private int id_articulo;
-    private Date fecha_venta;
+    private String fecha_venta;
 
     public VentaBean(){
         
     }
     
-    public VentaBean(int id_usuario, int id_articulo, Date fecha_venta){
+    public VentaBean(int id_usuario, int id_articulo, String fecha_venta){
         //this.id_venta = id_venta;
         this.id_usuario = id_usuario;
         this.id_articulo = id_articulo;
@@ -56,11 +56,11 @@ public class VentaBean {
         this.id_articulo = id_articulo;
     }
 
-    public Date getFecha_venta() {
+    public String getFecha_venta() {
         return fecha_venta;
     }
 
-    public void setFecha_venta(Date fecha_venta) {
+    public void setFecha_venta(String fecha_venta) {
         this.fecha_venta = fecha_venta;
     }
     

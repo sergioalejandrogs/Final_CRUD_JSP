@@ -16,20 +16,20 @@
                 <form:errors path="*" element="div" cssClass="alert alert-danger"/>
                 <div class="mb-3">
                     <form:label path="titulo" cssClass="col-form-label">Título del artículo: </form:label>
-                    <form:input path="titulo" cssClass="form-control"></form:input>
+                    <form:input path="titulo" cssClass="form-control"  required="required"></form:input>
                 </div>
                 <div class="mb-3">
                     <form:label path="descripcion" cssClass="col-form-label">Descripción del artículo: </form:label>
-                    <form:input path="descripcion" cssClass="form-control"></form:input>
+                    <form:input path="descripcion" cssClass="form-control"  required="required"></form:input>
                 </div>
                 <div class="mb-3">
                     <form:label path="precio" cssClass="col-form-label">Precio del artículo: </form:label>
-                    <form:input path="precio" cssClass="form-control"></form:input>
+                    <form:input path="precio" cssClass="form-control"  required="required"></form:input>
                 </div>
                 <div class="mb-3">
                     <form:label path="foto" cssClass="col-form-label">Foto del artículo: </form:label>
                     <img style="height: 50px; width: 50px;" src="<c:url value="${articulo.foto}" />" />
-                    <form:input path="foto" cssClass="form-control" type="file"></form:input>
+                    <form:input path="foto" cssClass="form-control" type="file"  required="required"></form:input>
                 </div>
                 <form:button name="enviar" Class="btn btn-primary">Enviar Datos</form:button> 
                 <a href="listarArticulos.htm" class="btn btn-secondary">Regresar</a>  

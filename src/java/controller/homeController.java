@@ -198,6 +198,8 @@ public class homeController {
                     list.add(fileItem.getString());
                 }
             }
+        System.out.print(list);
+        System.out.print(items);
             p.setNombre(list.get(0));
             p.setApellido(list.get(1));
             p.setEdad(Integer.parseInt(list.get(2)));

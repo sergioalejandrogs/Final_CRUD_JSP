@@ -16,23 +16,23 @@
                 <form:errors path="*" element="div" cssClass="alert alert-danger"/>
                 <div class="mb-3">
                     <form:label path="nombre" cssClass="col-form-label">Nombre de usuario: </form:label>
-                    <form:input path="nombre" cssClass="form-control"></form:input>
+                    <form:input path="nombre" cssClass="form-control"  required="required"></form:input>
                 </div>
                 <div class="mb-3">
                     <form:label path="apellido" cssClass="col-form-label">Apellido de usuario: </form:label>
-                    <form:input path="apellido" cssClass="form-control"></form:input>
+                    <form:input path="apellido" cssClass="form-control"  required="required"></form:input>
                 </div>
                 <div class="mb-3">
                     <form:label path="edad" cssClass="col-form-label">Edad de usuario: </form:label>
-                    <form:input path="edad" cssClass="form-control"></form:input>
+                    <form:input path="edad" cssClass="form-control"  required="required"></form:input>
                 </div>
                 <div class="mb-3">
                     <form:label path="correo" cssClass="col-form-label">Correo de usuario: </form:label>
-                    <form:input path="correo" cssClass="form-control"></form:input>
+                    <form:input path="correo" cssClass="form-control"  required="required"></form:input>
                 </div>
                 <div class="mb-3">
                     <form:label path="foto" cssClass="col-form-label">Foto: </form:label>
-                    <form:input path="foto" cssClass="form-control" type="file"></form:input>                    
+                    <form:input path="foto" cssClass="form-control" type="file"  required="required"></form:input>                    
                 </div>
                 <form:button name="enviar" Class="btn btn-primary">Enviar Datos</form:button> 
                 <a href="listarUsuarios.htm" class="btn btn-secondary">Regresar</a>

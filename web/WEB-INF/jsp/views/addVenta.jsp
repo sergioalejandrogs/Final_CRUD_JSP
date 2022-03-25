@@ -12,12 +12,12 @@
         <h1 style="text-align: center">Registro de Venta</h1>
         <br>
         <div class="container">
-            <form:form commandName="venta" cssClass="container col-sm-6">
+            <form:form commandName="venta" cssClass="container col-sm-6" method="post" >
                 <form:errors path="*" element="div" cssClass="alert alert-danger"/>
                 <fieldset disabled>
                     <div class="mb-3">
                         <form:label path="id_venta" cssClass="col-form-label">Código de venta: </form:label>
-                        <form:input path="id_venta" cssClass="form-control" id="disabledTextInput" type="text"></form:input>
+                        <form:input path="id_venta" cssClass="form-control" type="text"></form:input>
                     </div>
                 </fieldset>
                 <div class="mb-3">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="mb-3">
                     <form:label path="fecha_venta" cssClass="col-form-label">Fecha de venta: </form:label>
-                    <form:input path="fecha_venta" cssClass="form-control" type="date"></form:input>
+                    <form:input path="fecha_venta" cssClass="form-control" type="date"  required="required"></form:input>
                 </div>
                 <div class="mb-3">
                     <form:label path="id_articulo" cssClass="col-form-label">Artículo: </form:label>
